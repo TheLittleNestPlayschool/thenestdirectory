@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +7,112 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Hidden Google Business Verification Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://thelittle-nest.com/#organization",
+          "name": "The Little Nest Playschool",
+          "url": "https://thelittle-nest.com"
+        },
+        {
+          "@type": "Preschool",
+          "name": "The Little Nest Playschool - Atimonan Branch",
+          "telePhone": "09452919906",
+          "url": "https://thelittle-nest.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Purok Tayuman 1, Pan-Philippine Highway",
+            "addressLocality": "Atimonan",
+            "addressRegion": "Quezon",
+            "postalCode": "4331",
+            "addressCountry": "PH"
+          },
+          "hasMap": "https://maps.app.goo.gl/orrv2hgwxMT36m86A"
+        },
+        {
+          "@type": "Preschool",
+          "name": "The Little Nest Playschool - Batangas City Branch",
+          "telePhone": "09197022178",
+          "url": "https://thelittle-nest.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "RBMD Building, National Road, Bolbok",
+            "addressLocality": "Batangas City",
+            "addressRegion": "Batangas",
+            "postalCode": "4200",
+            "addressCountry": "PH"
+          },
+          "hasMap": "https://maps.google.com/?q=13.775109,121.045311&entry=gps"
+        },
+        {
+          "@type": "Preschool",
+          "name": "The Little Nest Playschool - Calauag Branch",
+          "telePhone": "09985775475",
+          "url": "https://thelittle-nest.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2nd floor, Zoelle Bldg. along Maharlika Highway, Brgy. Sta. Maria",
+            "addressLocality": "Calauag",
+            "addressRegion": "Quezon",
+            "postalCode": "4318",
+            "addressCountry": "PH"
+          },
+          "hasMap": "https://maps.app.goo.gl/n9U7wgXjkJyco7g86"
+        },
+        {
+          "@type": "Preschool",
+          "name": "The Little Nest Playschool - Candelaria Branch",
+          "telePhone": "09452919906",
+          "url": "https://thelittle-nest.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Gonzales St. Mary's Building, Poblacion",
+            "addressLocality": "Candelaria",
+            "addressRegion": "Quezon",
+            "postalCode": "4323",
+            "addressCountry": "PH"
+          },
+          "hasMap": "https://maps.app.goo.gl/zL6f5qPHK9HYdj7E6"
+        },
+        {
+          "@type": "Preschool",
+          "name": "The Little Nest Playschool - Catanauan Branch",
+          "telePhone": "09241977597",
+          "url": "https://thelittle-nest.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Zone 3 Lapu-lapu St., Brgy. 8",
+            "addressLocality": "Catanauan",
+            "addressRegion": "Quezon",
+            "postalCode": "4311",
+            "addressCountry": "PH"
+          },
+          "hasMap": "https://share.google/Gu6jQM2zsZAhvQTCb"
+        },
+        {
+          "@type": "Preschool",
+          "name": "The Little Nest Playschool - Gulang-Gulang Lucena Branch",
+          "telePhone": "09369475921",
+          "url": "https://thelittle-nest.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2nd Floor EDP BUILDING, Purok Masigasig, Barangay Gulang-Gulang",
+            "addressLocality": "Lucena",
+            "addressRegion": "Quezon",
+            "postalCode": "4301",
+            "addressCountry": "PH"
+          },
+          "hasMap": "https://share.google/LOTISZQTKVidOrxj7"
+        }
+      ]
+    }
+    </script>
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -32,24 +137,23 @@
             color: #0f172a;
             margin: 0 0 6px 0;
         }
-        .subtitle {
+        .welcome-text {
             font-size: 15px;
-            color: #64748b;
-            margin-bottom: 25px;
-            font-weight: 500;
+            color: #334155;
+            margin-top: 16px;
+            margin-bottom: 12px;
+            line-height: 1.6;
         }
-        .notice-box {
+        .counter-box {
+            font-size: 16px;
+            font-weight: 600;
+            color: #0d9488;
             background-color: #f0fdfa;
-            border-left: 4px solid #0d9488;
-            padding: 16px 20px;
-            border-radius: 4px;
+            padding: 12px 20px;
+            border-radius: 6px;
+            display: inline-block;
             margin-bottom: 30px;
-        }
-        .notice-box p {
-            margin: 0;
-            font-size: 14px;
-            font-weight: 500;
-            color: #115e59;
+            border: 1px solid #ccfbf1;
         }
         h2 {
             font-size: 18px;
@@ -121,31 +225,6 @@
             color: #94a3b8;
             font-style: italic;
         }
-        .image-grid {
-            display: flex;
-            gap: 6px;
-        }
-        .image-grid img {
-            width: 60px;
-            height: 45px;
-            object-fit: cover;
-            border-radius: 4px;
-            border: 1px solid #cbd5e1;
-            background-color: #f1f5f9;
-        }
-        .thumb-placeholder {
-            width: 60px;
-            height: 45px;
-            background-color: #f1f5f9;
-            border: 1px solid #e2e8f0;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 9px;
-            color: #94a3b8;
-            font-style: italic;
-        }
         footer {
             margin-top: 40px;
             text-align: center;
@@ -158,10 +237,13 @@
 
 <div class="container">
     <h1>The Little Nest Playschool</h1>
-    <div class="subtitle">Official Corporate Location Directory</div>
-
-    <div class="notice-box">
-        <p>The Little Nest Playschool proudly operates active physical school locations across the Philippines. All matching real-world profiles and verified corporate branch entities are strictly documented and referenced below.</p>
+    
+    <p class="welcome-text">
+        Welcome to The Little Nest Playschool! We are thrilled to bring our premium early childhood programs to families across the Philippines. Every single one of our campuses is a fully certified, safe, and active learning space designed specifically for your little ones. You can find our official, verified branch locations listed below.
+    </p>
+    
+    <div class="counter-box">
+        We are proud to share that we now have 18 active campuses nationwide!
     </div>
 
     <h2>Active Campus Registry</h2>
@@ -169,14 +251,13 @@
         <table>
             <thead>
                 <tr>
-                    <th style="width: 14%;">Branch Name</th>
-                    <th style="width: 22%;">Street Address / Building</th>
-                    <th style="width: 11%;">Barangay</th>
-                    <th style="width: 12%;">City / Municipality</th>
-                    <th style="width: 11%;">Province</th>
-                    <th style="width: 7%;">Postal Code</th>
-                    <th style="width: 11%;">Campus Gallery</th>
-                    <th style="width: 12%;">Contact & Support Channels</th>
+                    <th style="width: 16%;">Branch Name</th>
+                    <th style="width: 26%;">Street Address / Building</th>
+                    <th style="width: 13%;">Barangay</th>
+                    <th style="width: 14%;">City / Municipality</th>
+                    <th style="width: 13%;">Province</th>
+                    <th style="width: 8%;">Postal Code</th>
+                    <th style="width: 14%;">Contact & Support Channels</th>
                 </tr>
             </thead>
             <tbody>
@@ -187,12 +268,6 @@
                     <td>Atimonan</td>
                     <td>Quezon</td>
                     <td>4331</td>
-                    <td>
-                        <div class="image-grid">
-                            <img src="photo1.jpg" alt="The Little Nest Playschool Atimonan Campus Front">
-                            <img src="photo2.jpg" alt="The Little Nest Playschool Atimonan Classroom">
-                        </div>
-                    </td>
                     <td>
                         <strong>0945 291 9906</strong>
                         <span class="email-text">admin@thelittle-next.com</span>
@@ -208,12 +283,6 @@
                     <td>Batangas</td>
                     <td>4200</td>
                     <td>
-                        <div class="image-grid">
-                            <img src="batangas1.jpg" alt="The Little Nest Playschool Batangas City Campus Front">
-                            <img src="batangas2.jpg" alt="The Little Nest Playschool Batangas City Classroom">
-                        </div>
-                    </td>
-                    <td>
                         <strong>0919 702 2178</strong>
                         <span class="email-text">admin@thelittle-next.com</span>
                         <a href="https://www.facebook.com/profile.php?id=61576401758091" class="link-item" target="_blank">Facebook Page</a>
@@ -227,12 +296,6 @@
                     <td>Calauag</td>
                     <td>Quezon</td>
                     <td>4318</td>
-                    <td>
-                        <div class="image-grid">
-                            <div class="thumb-placeholder">[Img 1]</div>
-                            <div class="thumb-placeholder">[Img 2]</div>
-                        </div>
-                    </td>
                     <td>
                         <strong>0998 577 5475</strong>
                         <span class="email-text">admin@thelittle-next.com</span>
@@ -248,12 +311,6 @@
                     <td>Quezon</td>
                     <td>4323</td>
                     <td>
-                        <div class="image-grid">
-                            <img src="candelaria1.jpg" alt="The Little Nest Playschool Candelaria Campus Front">
-                            <img src="candelaria2.jpg" alt="The Little Nest Playschool Candelaria Classroom">
-                        </div>
-                    </td>
-                    <td>
                         <strong>0945 291 9906</strong>
                         <span class="email-text">admin@thelittle-next.com</span>
                         <a href="https://www.facebook.com/TheLittleNestPlayschoolCandelaria/" class="link-item" target="_blank">Facebook Page</a>
@@ -267,12 +324,6 @@
                     <td>Catanauan</td>
                     <td>Quezon</td>
                     <td>4311</td>
-                    <td>
-                        <div class="image-grid">
-                            <img src="catanauan1.jpg" alt="The Little Nest Playschool Catanauan Campus Front">
-                            <img src="catanauan2.jpg" alt="The Little Nest Playschool Catanauan Classroom">
-                        </div>
-                    </td>
                     <td>
                         <strong>0924 197 7597</strong>
                         <span class="email-text">admin@thelittle-next.com</span>
@@ -288,12 +339,6 @@
                     <td>Quezon</td>
                     <td>4301</td>
                     <td>
-                        <div class="image-grid">
-                            <img src="gulang1.jpg" alt="The Little Nest Playschool Gulang-Gulang Campus Front">
-                            <img src="gulang2.jpg" alt="The Little Nest Playschool Gulang-Gulang Classroom">
-                        </div>
-                    </td>
-                    <td>
                         <strong>0936 947 5921</strong>
                         <span class="email-text">admin@thelittle-next.com</span>
                         <a href="https://www.facebook.com/profile.php?id=61585981346885" class="link-item" target="_blank">Facebook Page</a>
@@ -307,12 +352,6 @@
                     <td>Gumaca</td>
                     <td>Quezon</td>
                     <td>4307</td>
-                    <td>
-                        <div class="image-grid">
-                            <div class="thumb-placeholder">[Img 1]</div>
-                            <div class="thumb-placeholder">[Img 2]</div>
-                        </div>
-                    </td>
                     <td>
                         <strong>0905 426 9440</strong>
                         <span class="email-text">admin@thelittle-next.com</span>
@@ -328,12 +367,6 @@
                     <td>Quezon</td>
                     <td>4316</td>
                     <td>
-                        <div class="image-grid">
-                            <div class="thumb-placeholder">[Img 1]</div>
-                            <div class="thumb-placeholder">[Img 2]</div>
-                        </div>
-                    </td>
-                    <td>
                         <strong>0998 577 5475</strong>
                         <span class="email-text">admin@thelittle-next.com</span>
                         <a href="https://www.facebook.com/profile.php?id=615742423861424" class="link-item" target="_blank">Facebook Page</a>
@@ -347,12 +380,6 @@
                     <td>Lucban</td>
                     <td>Quezon</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td>
-                        <div class="image-grid">
-                            <div class="thumb-placeholder">[Img 1]</div>
-                            <div class="thumb-placeholder">[Img 2]</div>
-                        </div>
-                    </td>
                     <td>
                         <strong>0945 291 9906</strong>
                         <span class="email-text">admin@thelittle-next.com</span>
@@ -368,12 +395,6 @@
                     <td>Quezon</td>
                     <td><span class="placeholder">[Zip]</span></td>
                     <td>
-                        <div class="image-grid">
-                            <div class="thumb-placeholder">[Img 1]</div>
-                            <div class="thumb-placeholder">[Img 2]</div>
-                        </div>
-                    </td>
-                    <td>
                         <strong>0976 333 2310</strong>
                         <span class="email-text">admin@thelittle-next.com</span>
                         <a href="https://facebook.com/thelittlenestplayschoollucenabranchedone" class="link-item" target="_blank">Facebook Page</a>
@@ -387,12 +408,6 @@
                     <td>Tiaong</td>
                     <td>Quezon</td>
                     <td>4325</td>
-                    <td>
-                        <div class="image-grid">
-                            <div class="thumb-placeholder">[Img 1]</div>
-                            <div class="thumb-placeholder">[Img 2]</div>
-                        </div>
-                    </td>
                     <td>
                         <span class="placeholder">[Phone]</span>
                         <span class="email-text">admin@thelittle-next.com</span>
@@ -408,12 +423,6 @@
                     <td>Laguna</td>
                     <td><span class="placeholder">[Zip]</span></td>
                     <td>
-                        <div class="image-grid">
-                            <div class="thumb-placeholder">[Img 1]</div>
-                            <div class="thumb-placeholder">[Img 2]</div>
-                        </div>
-                    </td>
-                    <td>
                         <span class="placeholder">[Phone]</span>
                         <span class="email-text">admin@thelittle-next.com</span>
                         <a href="https://facebook.com/thelittlenestplayschoolmajayjay" class="link-item" target="_blank">Facebook Page</a>
@@ -427,12 +436,6 @@
                     <td>Mulanay</td>
                     <td>Quezon</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td>
-                        <div class="image-grid">
-                            <div class="thumb-placeholder">[Img 1]</div>
-                            <div class="thumb-placeholder">[Img 2]</div>
-                        </div>
-                    </td>
                     <td>
                         <strong>0919 702 2178</strong>
                         <span class="email-text">admin@thelittle-next.com</span>
@@ -448,12 +451,6 @@
                     <td>Nueva Ecija</td>
                     <td><span class="placeholder">[Zip]</span></td>
                     <td>
-                        <div class="image-grid">
-                            <div class="thumb-placeholder">[Img 1]</div>
-                            <div class="thumb-placeholder">[Img 2]</div>
-                        </div>
-                    </td>
-                    <td>
                         <strong>0995 586 2140</strong>
                         <span class="email-text">admin@thelittle-next.com</span>
                         <a href="https://facebook.com/thelittlenestplayschoolmunoz" class="link-item" target="_blank">Facebook Page</a>
@@ -467,12 +464,6 @@
                     <td>Pagbilao</td>
                     <td>Quezon</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td>
-                        <div class="image-grid">
-                            <div class="thumb-placeholder">[Img 1]</div>
-                            <div class="thumb-placeholder">[Img 2]</div>
-                        </div>
-                    </td>
                     <td>
                         <span class="placeholder">[Phone]</span>
                         <span class="email-text">admin@thelittle-next.com</span>
@@ -488,12 +479,6 @@
                     <td>Quezon</td>
                     <td><span class="placeholder">[Zip]</span></td>
                     <td>
-                        <div class="image-grid">
-                            <div class="thumb-placeholder">[Img 1]</div>
-                            <div class="thumb-placeholder">[Img 2]</div>
-                        </div>
-                    </td>
-                    <td>
                         <span class="placeholder">[Phone]</span>
                         <span class="email-text">admin@thelittle-next.com</span>
                         <a href="https://facebook.com/thelittlenestplayschoolredv" class="link-item" target="_blank">Facebook Page</a>
@@ -507,12 +492,6 @@
                     <td>San Pablo</td>
                     <td>Laguna</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td>
-                        <div class="image-grid">
-                            <div class="thumb-placeholder">[Img 1]</div>
-                            <div class="thumb-placeholder">[Img 2]</div>
-                        </div>
-                    </td>
                     <td>
                         <span class="placeholder">[Phone]</span>
                         <span class="email-text">admin@thelittle-next.com</span>
@@ -528,12 +507,6 @@
                     <td>Quezon</td>
                     <td><span class="placeholder">[Zip]</span></td>
                     <td>
-                        <div class="image-grid">
-                            <div class="thumb-placeholder">[Img 1]</div>
-                            <div class="thumb-placeholder">[Img 2]</div>
-                        </div>
-                    </td>
-                    <td>
                         <strong>0945 291 9906</strong>
                         <span class="email-text">admin@thelittle-next.com</span>
                         <a href="https://facebook.com/thelittlenestplayschoolsariaya" class="link-item" target="_blank">Facebook Page</a>
@@ -548,12 +521,6 @@
                     <td>Quezon</td>
                     <td>4327</td>
                     <td>
-                        <div class="image-grid">
-                            <img src="photo1.jpg" alt="The Little Nest Playschool Tayabas Campus Front">
-                            <img src="photo2.jpg" alt="The Little Nest Playschool Tayabas Classroom">
-                        </div>
-                    </td>
-                    <td>
                         <strong>0945 291 9906</strong>
                         <span class="email-text">admin@thelittle-next.com</span>
                         <a href="https://facebook.com/thelittlenestplayschooltayabas" class="link-item" target="_blank">Facebook Page</a>
@@ -567,12 +534,6 @@
                     <td>Tayug</td>
                     <td>Pangasinan</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td>
-                        <div class="image-grid">
-                            <div class="thumb-placeholder">[Img 1]</div>
-                            <div class="thumb-placeholder">[Img 2]</div>
-                        </div>
-                    </td>
                     <td>
                         <span class="placeholder">[Phone]</span>
                         <span class="email-text">admin@thelittle-next.com</span>
