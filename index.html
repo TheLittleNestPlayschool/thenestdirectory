@@ -17,7 +17,7 @@
             padding: 40px 15px;
         }
         .container {
-            max-width: 1350px;
+            max-width: 1400px;
             margin: 0 auto;
             background: #ffffff;
             padding: 35px;
@@ -66,7 +66,7 @@
             border-collapse: collapse;
             text-align: left;
             font-size: 13px;
-            table-layout: fixed; /* Forces columns to strictly obey assigned widths */
+            table-layout: fixed;
         }
         th {
             background-color: #f8fafc;
@@ -79,11 +79,11 @@
             letter-spacing: 0.03em;
         }
         td {
-            padding: 14px 12px;
+            padding: 16px 12px;
             border-bottom: 1px solid #e2e8f0;
             color: #334155;
             vertical-align: middle;
-            word-wrap: break-word; /* Gracefully handles long text wrapping inside the cell */
+            word-wrap: break-word;
         }
         tr:hover td {
             background-color: #f8fafc;
@@ -95,21 +95,38 @@
             font-weight: 600;
             color: #0f172a;
         }
-        .nowrap-col {
-            white-space: nowrap;
-        }
-        .fb-link {
+        .link-item {
             display: block;
             font-size: 11px;
             color: #1877f2;
             text-decoration: none;
-            margin-top: 2px;
+            margin-top: 3px;
             font-weight: 500;
         }
-        .fb-link:hover {
+        .link-item.map-link {
+            color: #0d9488;
+        }
+        .link-item:hover {
             text-decoration: underline;
         }
         .placeholder {
+            color: #94a3b8;
+            font-style: italic;
+        }
+        .image-grid {
+            display: flex;
+            gap: 6px;
+        }
+        .thumb-placeholder {
+            width: 60px;
+            height: 45px;
+            background-color: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 9px;
             color: #94a3b8;
             font-style: italic;
         }
@@ -136,13 +153,14 @@
         <table>
             <thead>
                 <tr>
-                    <th style="width: 16%;">Branch Name</th>
-                    <th style="width: 24%;">Street Address / Building</th>
-                    <th style="width: 14%;">Barangay</th>
-                    <th style="width: 15%;">City / Municipality</th>
-                    <th style="width: 13%;">Province</th>
-                    <th style="width: 8%;">Postal Code</th>
-                    <th style="width: 14%;">Contact Support</th>
+                    <th style="width: 14%;">Branch Name</th>
+                    <th style="width: 22%;">Street Address / Building</th>
+                    <th style="width: 12%;">Barangay</th>
+                    <th style="width: 13%;">City / Municipality</th>
+                    <th style="width: 11%;">Province</th>
+                    <th style="width: 7%;">Postal Code</th>
+                    <th style="width: 11%;">Campus Gallery</th>
+                    <th style="width: 10%;">Contact & Links</th>
                 </tr>
             </thead>
             <tbody>
@@ -152,8 +170,18 @@
                     <td><span class="placeholder">[Fill Barangay]</span></td>
                     <td>Atimonan</td>
                     <td>Quezon Province</td>
-                    <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col">0945 291 9906<a href="https://facebook.com/thelittlenestplayschoolatimonan" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>4331</td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>0945 291 9906</strong>
+                        <a href="https://facebook.com/thelittlenestplayschoolatimonan" class="link-item" target="_blank">Facebook Page</a>
+                        <a href="https://maps.app.goo.gl/orrv2hgwxMT36m86A" class="link-item map-link" target="_blank">Google Map</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Batangas City Branch</td>
@@ -162,7 +190,17 @@
                     <td>Batangas City</td>
                     <td>Batangas</td>
                     <td>4200</td>
-                    <td class="nowrap-col">0919 702 2178<a href="https://facebook.com/thelittlenestplayschoolbatangascity" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>0919 702 2178</strong>
+                        <a href="https://facebook.com/thelittlenestplayschoolbatangascity" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Calbayog Branch</td>
@@ -171,7 +209,17 @@
                     <td>Calbayog</td>
                     <td>Samar</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col">0964 860 0698<a href="https://facebook.com/thelittlenestplayschoolcalbayog" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>0964 860 0698</strong>
+                        <a href="https://facebook.com/thelittlenestplayschoolcalbayog" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Candelaria Branch</td>
@@ -180,7 +228,17 @@
                     <td>Candelaria</td>
                     <td>Quezon Province</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col">0994 592 0462<a href="https://facebook.com/thelittlenestplayschoolcandelaria" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>0994 592 0462</strong>
+                        <a href="https://facebook.com/thelittlenestplayschoolcandelaria" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Catanauan Branch</td>
@@ -189,7 +247,17 @@
                     <td>Catanauan</td>
                     <td>Quezon Province</td>
                     <td>4311</td>
-                    <td class="nowrap-col">0967 275 2378<a href="https://facebook.com/thelittlenestplayschoolcatanauan" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>0967 275 2378</strong>
+                        <a href="https://facebook.com/thelittlenestplayschoolcatanauan" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Gulang-Gulang Lucena Branch</td>
@@ -198,7 +266,17 @@
                     <td>Lucena</td>
                     <td>Quezon Province</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col">0936 947 5921<a href="https://facebook.com/thelittlenestplayschoolgulanggulang" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>0936 947 5921</strong>
+                        <a href="https://facebook.com/thelittlenestplayschoolgulanggulang" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Gumaca Branch</td>
@@ -207,7 +285,17 @@
                     <td>Gumaca</td>
                     <td>Quezon Province</td>
                     <td>4307</td>
-                    <td class="nowrap-col">0905 426 9440<a href="https://facebook.com/thelittlenestplayschoolgumaca" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>0905 426 9440</strong>
+                        <a href="https://facebook.com/thelittlenestplayschoolgumaca" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Lopez / Calauag Branch</td>
@@ -216,7 +304,17 @@
                     <td>Lopez</td>
                     <td>Quezon Province</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col">0998 577 5475<a href="https://facebook.com/thelittlenestplayschoollopez" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>0998 577 5475</strong>
+                        <a href="https://facebook.com/thelittlenestplayschoollopez" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Lucban Branch</td>
@@ -225,7 +323,17 @@
                     <td>Lucban</td>
                     <td>Quezon Province</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col">0945 291 9906<a href="https://facebook.com/thelittlenestplayschoollucban" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>0945 291 9906</strong>
+                        <a href="https://facebook.com/thelittlenestplayschoollucban" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Lucena Branch One</td>
@@ -234,7 +342,17 @@
                     <td>Lucena</td>
                     <td>Quezon Province</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col">0976 333 2310<a href="https://facebook.com/thelittlenestplayschoollucenabranchedone" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>0976 333 2310</strong>
+                        <a href="https://facebook.com/thelittlenestplayschoollucenabranchedone" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Lusacan Tiaong Branch</td>
@@ -243,7 +361,17 @@
                     <td>Tiaong</td>
                     <td>Quezon Province</td>
                     <td>4325</td>
-                    <td class="nowrap-col"><span class="placeholder">[Fill Phone]</span><a href="https://facebook.com/thelittlenestplayschoollusacantiaong" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="placeholder">[Phone]</span>
+                        <a href="https://facebook.com/thelittlenestplayschoollusacantiaong" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Mabini Branch</td>
@@ -252,7 +380,17 @@
                     <td>Mabini</td>
                     <td>Pangasinan</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col">0993 703 9631<a href="https://facebook.com/thelittlenestplayschoolmabini" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>0993 703 9631</strong>
+                        <a href="https://facebook.com/thelittlenestplayschoolmabini" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Majayjay Branch</td>
@@ -261,7 +399,17 @@
                     <td>Majayjay</td>
                     <td>Laguna</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col"><span class="placeholder">[Fill Phone]</span><a href="https://facebook.com/thelittlenestplayschoolmajayjay" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="placeholder">[Phone]</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolmajayjay" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Mulanay Branch</td>
@@ -270,7 +418,17 @@
                     <td>Mulanay</td>
                     <td>Quezon Province</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col">0919 702 2178<a href="https://facebook.com/thelittlenestplayschoolmulanay" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>0919 702 2178</strong>
+                        <a href="https://facebook.com/thelittlenestplayschoolmulanay" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Munoz Branch</td>
@@ -279,7 +437,17 @@
                     <td>Science City of Munoz</td>
                     <td>Nueva Ecija</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col">0995 586 2140<a href="https://facebook.com/thelittlenestplayschoolmunoz" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>0995 586 2140</strong>
+                        <a href="https://facebook.com/thelittlenestplayschoolmunoz" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Pagbilao Branch</td>
@@ -288,7 +456,17 @@
                     <td>Pagbilao</td>
                     <td>Quezon Province</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col"><span class="placeholder">[Fill Phone]</span><a href="https://facebook.com/thelittlenestplayschoolpagbilao" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="placeholder">[Phone]</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolpagbilao" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Red-V Branch</td>
@@ -297,7 +475,17 @@
                     <td>Lucena</td>
                     <td>Quezon Province</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col"><span class="placeholder">[Fill Phone]</span><a href="https://facebook.com/thelittlenestplayschoolredv" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="placeholder">[Phone]</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolredv" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">San Pablo Branch</td>
@@ -306,7 +494,17 @@
                     <td>San Pablo</td>
                     <td>Laguna</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col"><span class="placeholder">[Fill Phone]</span><a href="https://facebook.com/thelittlenestplayschoolsanpablo" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="placeholder">[Phone]</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolsanpablo" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Sariaya Branch</td>
@@ -315,7 +513,17 @@
                     <td>Sariaya</td>
                     <td>Quezon Province</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col">0945 291 9906<a href="https://facebook.com/thelittlenestplayschoolsariaya" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>0945 291 9906</strong>
+                        <a href="https://facebook.com/thelittlenestplayschoolsariaya" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Tayabas Branch</td>
@@ -324,7 +532,17 @@
                     <td>Tayabas</td>
                     <td>Quezon Province</td>
                     <td>4327</td>
-                    <td class="nowrap-col">0945 291 9906<a href="https://facebook.com/thelittlenestplayschooltayabas" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>0945 291 9906</strong>
+                        <a href="https://facebook.com/thelittlenestplayschooltayabas" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Tayug Branch</td>
@@ -333,7 +551,17 @@
                     <td>Tayug</td>
                     <td>Pangasinan</td>
                     <td><span class="placeholder">[Zip]</span></td>
-                    <td class="nowrap-col"><span class="placeholder">[Fill Phone]</span><a href="https://facebook.com/thelittlenestplayschooltayug" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td>
+                        <div class="image-grid">
+                            <div class="thumb-placeholder">[Img 1]</div>
+                            <div class="thumb-placeholder">[Img 2]</div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="placeholder">[Phone]</span>
+                        <a href="https://facebook.com/thelittlenestplayschooltayug" class="link-item" target="_blank">Facebook Page</a>
+                        <span class="placeholder">[No Map]</span>
+                    </td>
                 </tr>
             </tbody>
         </table>
