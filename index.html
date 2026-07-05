@@ -323,413 +323,287 @@
             background: #ffffff;
             padding: 35px;
             border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
             border-top: 8px solid #0d9488;
         }
-        h1 {
-            font-size: 26px;
-            font-weight: 700;
-            color: #0f172a;
-            margin: 0 0 6px 0;
-        }
-        .welcome-text {
-            font-size: 15px;
-            color: #334155;
-            margin-top: 16px;
-            margin-bottom: 12px;
-            line-height: 1.6;
-        }
-        .counter-box {
-            font-size: 16px;
-            font-weight: 600;
-            color: #0d9488;
-            background-color: #f0fdfa;
-            padding: 12px 20px;
-            border-radius: 6px;
-            display: inline-block;
-            margin-bottom: 30px;
-            border: 1px solid #ccfbf1;
-        }
-        h2 {
-            font-size: 18px;
-            font-weight: 600;
-            color: #0f172a;
-            margin-bottom: 16px;
-            border-bottom: 2px solid #f1f5f9;
-            padding-bottom: 8px;
-        }
-        .table-container {
-            overflow-x: auto;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-            font-size: 13px;
-            table-layout: fixed;
-        }
-        th {
-            background-color: #f8fafc;
-            color: #475569;
-            font-weight: 600;
-            padding: 12px;
-            border-bottom: 2px solid #e2e8f0;
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-        }
-        td {
-            padding: 16px 12px;
-            border-bottom: 1px solid #e2e8f0;
-            color: #334155;
-            vertical-align: middle;
-            word-wrap: break-word;
-        }
-        tr:hover td {
-            background-color: #f8fafc;
-        }
-        tr:last-child td {
-            border-bottom: none;
-        }
-        .branch-name {
-            font-weight: 600;
-            color: #0f172a;
-        }
-        .link-item {
-            display: block;
-            font-size: 11px;
-            color: #1877f2;
-            text-decoration: none;
-            margin-top: 3px;
-            font-weight: 500;
-            word-break: break-all;
-        }
-        .link-item.map-link {
-            color: #0d9488;
-        }
-        .link-item:hover {
-            text-decoration: underline;
-        }
-        .email-text {
-            display: block;
-            font-size: 11px;
-            color: #475569;
-            margin-top: 2px;
-        }
-        .placeholder {
-            color: #94a3b8;
-            font-style: italic;
-        }
-        footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 12px;
-            color: #94a3b8;
-        }
+        h1 { font-size: 26px; font-weight: 700; color: #0f172a; margin: 0 0 6px 0; }
+        .counter-box { font-size: 16px; font-weight: 600; color: #0d9488; background-color: #f0fdfa; padding: 12px 20px; border-radius: 6px; display: inline-block; margin-bottom: 30px; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        th { background-color: #f8fafc; color: #475569; font-weight: 600; padding: 12px; border-bottom: 2px solid #e2e8f0; text-transform: uppercase; }
+        td { padding: 16px 12px; border-bottom: 1px solid #e2e8f0; color: #334155; }
+        .branch-name { font-weight: 600; color: #0f172a; }
+        .link-item { display: block; font-size: 11px; color: #1877f2; text-decoration: none; margin-top: 3px; }
+        .link-item.map-link { color: #0d9488; }
+        footer { margin-top: 40px; text-align: center; font-size: 12px; color: #94a3b8; }
     </style>
 </head>
 <body>
-
 <div class="container">
-    <h1>The Little Nest Playschool</h1>
-    
-    <p class="welcome-text">
-        Welcome to The Little Nest Playschool! We are thrilled to bring our premium early childhood programs to families across the Philippines. Every single one of our campuses is a fully certified, safe, and active learning space designed specifically for your little ones. You can find our official, verified branch locations listed below.
-    </p>
-    
-    <div class="counter-box">
-        We are proud to share that we now have 19 active campuses nationwide!
-    </div>
-
-    <h2>Active Campus Registry</h2>
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th style="width: 16%;">Branch Name</th>
-                    <th style="width: 26%;">Street Address / Building</th>
-                    <th style="width: 13%;">Barangay</th>
-                    <th style="width: 14%;">City / Municipality</th>
-                    <th style="width: 13%;">Province</th>
-                    <th style="width: 8%;">Postal Code</th>
-                    <th style="width: 14%;">Contact & Support Channels</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="branch-name">Atimonan Branch</td>
-                    <td>Purok Tayuman 1, Pan-Philippine Highway</td>
-                    <td>Balubad</td>
-                    <td>Atimonan</td>
-                    <td>Quezon</td>
-                    <td>4331</td>
-                    <td>
-                        <strong>0945 291 9906</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=61573633524226" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://maps.app.goo.gl/orrv2hgwxMT36m86A" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Batangas City Branch</td>
-                    <td>RBMD Building, National Road (beside TGP Generic Pharmacy)</td>
-                    <td>Bolbok</td>
-                    <td>Batangas City</td>
-                    <td>Batangas</td>
-                    <td>4200</td>
-                    <td>
-                        <strong>0919 702 2178</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=61576401758091" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://maps.google.com/?q=13.775109,121.045311&entry=gps" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Calauag Branch</td>
-                    <td>2nd floor, Zoelle Bldg. along Maharlika Highway</td>
-                    <td>Sta. Maria</td>
-                    <td>Calauag</td>
-                    <td>Quezon</td>
-                    <td>4318</td>
-                    <td>
-                        <strong>0998 577 5475</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=615742423861424" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://maps.app.goo.gl/n9U7wgXjkJyco7g86" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Candelaria Branch</td>
-                    <td>Gonzales St. Mary's Building</td>
-                    <td>Poblacion</td>
-                    <td>Candelaria</td>
-                    <td>Quezon</td>
-                    <td>4323</td>
-                    <td>
-                        <strong>0945 291 9906</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/TheLittleNestPlayschoolCandelaria/" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://maps.app.goo.gl/zL6f5qPHK9HYdj7E6" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Catanauan Branch</td>
-                    <td>Zone 3 Lapu-lapu St. (Near Oscar's Tapa)</td>
-                    <td>8</td>
-                    <td>Catanauan</td>
-                    <td>Quezon</td>
-                    <td>4311</td>
-                    <td>
-                        <strong>0924 197 7597</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=61583684328952" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://share.google/Gu6jQM2zsZAhvQTCb" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Gulang-Gulang Lucena Branch</td>
-                    <td>2nd Floor EDP BUILDING, Purok Masigasig (beside Balinese Pijat Spa / near ALFAMART)</td>
-                    <td>Gulang-Gulang</td>
-                    <td>Lucena</td>
-                    <td>Quezon</td>
-                    <td>4301</td>
-                    <td>
-                        <strong>0936 947 5921</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=61585981346885" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://share.google/LOTISZQTKVidOrxj7" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Gumaca Branch</td>
-                    <td>120 Luna Street</td>
-                    <td>Rizal</td>
-                    <td>Gumaca</td>
-                    <td>Quezon</td>
-                    <td>4307</td>
-                    <td>
-                        <strong>0905 426 9440</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://facebook.com/thelittlenestgumaca" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://share.google/lHTY6ajR0s3P6p5lH" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Lopez Branch</td>
-                    <td>Vendors Cooperative Bldg, Poblacion</td>
-                    <td>Lopez</td>
-                    <td>Lopez</td>
-                    <td>Quezon</td>
-                    <td>4316</td>
-                    <td>
-                        <strong>0998 577 5475</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=615742423861424" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://share.google/o8XbVYQ2sICsx0Kmw" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Lucban Branch</td>
-                    <td>Gate 1, Miramonte Subdivision, Millenium Plaza Building</td>
-                    <td>Tinamnan</td>
-                    <td>Lucban</td>
-                    <td>Quezon</td>
-                    <td>4328</td>
-                    <td>
-                        <strong>0945 291 9906</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=61576672797126" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://share.google/SrtfdPUAUQdFjvNcc" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Lucena Branch One</td>
-                    <td>9P Gomez St.</td>
-                    <td>3</td>
-                    <td>Lucena</td>
-                    <td>Quezon</td>
-                    <td>4301</td>
-                    <td>
-                        <strong>0976 333 2310</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=61583009156879" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://share.google/Bly48t4vt5FKubHc9" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Lusacan Tiaong Branch</td>
-                    <td>MCV Building, Maharlika Highway, Villa Nosa Subd.</td>
-                    <td>Lusacan</td>
-                    <td>Tiaong</td>
-                    <td>Quezon</td>
-                    <td>4325</td>
-                    <td>
-                        <strong>0942 788 0247</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=61588336485281" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://maps.app.goo.gl/Hoy9wxoJe2myWjR78" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Majayjay Branch</td>
-                    <td>RD Building, 2nd Floor</td>
-                    <td>Sta. Catalina</td>
-                    <td>Majayjay</td>
-                    <td>Laguna</td>
-                    <td>4005</td>
-                    <td>
-                        <strong>0956 044 8758</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=61581147763844" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://share.google/iozZxaCs3JEsa6uFk" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Munoz Branch</td>
-                    <td>Purok Villa Isidra</td>
-                    <td>Bantug</td>
-                    <td>Science City of Munoz</td>
-                    <td>Nueva Ecija</td>
-                    <td>3119</td>
-                    <td>
-                        <strong>0995 586 2140</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=61588927955721" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://share.google/uYNw0wighvkSu5Igy" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Pagbilao Branch</td>
-                    <td>The Raftel Unit 19 2nd Floor, Sitio Fori</td>
-                    <td>Talipan</td>
-                    <td>Pagbilao</td>
-                    <td>Quezon</td>
-                    <td>4302</td>
-                    <td>
-                        <strong>0917 314 3096</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=61586875343185" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://maps.app.goo.gl/72ANrReAYRhajt1B6" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Red-V Branch</td>
-                    <td>2nd Floor, Unit 5, Aranilla Compound, Maharlika Highway</td>
-                    <td>Ibabang Dupay</td>
-                    <td>Lucena</td>
-                    <td>Quezon</td>
-                    <td>4301</td>
-                    <td>
-                        <strong>0961 852 1387</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=61587201597666" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://maps.app.goo.gl/8Vn1xFQ1M63HAhM38" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Sariaya Main Branch</td>
-                    <td>Jesus Nazareno Bldg, Quezon Ave. Extension</td>
-                    <td>Mamala 2</td>
-                    <td>Sariaya</td>
-                    <td>Quezon</td>
-                    <td>4322</td>
-                    <td>
-                        <strong>0945 291 9906</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/thelittlenestplayschool" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://share.google/VLzZJh3h4h0cQz6ni" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Santo Tomas Branch</td>
-                    <td>N.D.N. Building 2nd Floor</td>
-                    <td>San Roque</td>
-                    <td>Santo Tomas</td>
-                    <td>Batangas</td>
-                    <td>4232</td>
-                    <td>
-                        <strong>0949 914 3626</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=61591180232416" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://maps.app.goo.gl/CxzKZH11VsmJ1yJ1A" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Tayabas Branch</td>
-                    <td>37 Quezon Avenue, San Diego Zone 2</td>
-                    <td>San Diego Zone 2</td>
-                    <td>Tayabas</td>
-                    <td>Quezon</td>
-                    <td>4327</td>
-                    <td>
-                        <strong>0945 706 2421</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=61575064837470" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://share.google/KwY1mXQDKX91aL7PU" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="branch-name">Tayug Branch</td>
-                    <td>Rizal St.</td>
-                    <td>Poblacion A</td>
-                    <td>Tayug</td>
-                    <td>Pangasinan</td>
-                    <td>2445</td>
-                    <td>
-                        <strong>0916 428 1578</strong>
-                        <span class="email-text">admin@thelittle-next.com</span>
-                        <a href="https://www.facebook.com/profile.php?id=61589855182033" class="link-item" target="_blank">Facebook Page</a>
-                        <a href="https://maps.app.goo.gl/dAM8KiQv7eaUe7d47" class="link-item map-link" target="_blank">Google Map</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <footer>
-        &copy; 2026 The Little Nest Playschool. All rights reserved.
-    </footer>
+    <h1>TLNP - Branches</h1>
+    <div class="counter-box">19 Active Campuses Nationwide</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Branch Name</th>
+                <th>Street Address / Building</th>
+                <th>Barangay</th>
+                <th>City / Municipality</th>
+                <th>Province</th>
+                <th>Postal Code</th>
+                <th>Contact & Support</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="branch-name">Atimonan Branch</td>
+                <td>Purok Tayuman 1, Pan-Philippine Highway</td>
+                <td>Balubad</td>
+                <td>Atimonan</td>
+                <td>Quezon</td>
+                <td>4331</td>
+                <td>
+                    <strong>0945 291 9906</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61573633524226" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://maps.app.goo.gl/orrv2hgwxMT36m86A" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Batangas City Branch</td>
+                <td>RBMD Building, National Road</td>
+                <td>Bolbok</td>
+                <td>Batangas City</td>
+                <td>Batangas</td>
+                <td>4200</td>
+                <td>
+                    <strong>0919 702 2178</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61576401758091" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://maps.google.com/?q=13.775109,121.045311&entry=gps" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Calauag Branch</td>
+                <td>2nd floor, Zoelle Bldg. along Maharlika Highway</td>
+                <td>Sta. Maria</td>
+                <td>Calauag</td>
+                <td>Quezon</td>
+                <td>4318</td>
+                <td>
+                    <strong>0998 577 5475</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61574243861424" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://maps.app.goo.gl/n9U7wgXjkJyco7g86" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Candelaria Branch</td>
+                <td>Gonzales St. Mary's Building</td>
+                <td>Poblacion</td>
+                <td>Candelaria</td>
+                <td>Quezon</td>
+                <td>4323</td>
+                <td>
+                    <strong>0945 291 9906</strong><br>
+                    <a href="https://www.facebook.com/TheLittleNestPlayschoolCandelaria/" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://maps.app.goo.gl/zL6f5qPHK9HYdj7E6" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Catanauan Branch</td>
+                <td>Zone 3 Lapu-lapu St.</td>
+                <td>8</td>
+                <td>Catanauan</td>
+                <td>Quezon</td>
+                <td>4311</td>
+                <td>
+                    <strong>0924 197 7597</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61583684328952" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://share.google/Gu6jQM2zsZAhvQTCb" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Gulang-Gulang Lucena Branch</td>
+                <td>2nd Floor EDP BUILDING, Purok Masigasig</td>
+                <td>Gulang-Gulang</td>
+                <td>Lucena</td>
+                <td>Quezon</td>
+                <td>4301</td>
+                <td>
+                    <strong>0936 947 5921</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61585981346885" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://share.google/LOTISZQTKVidOrxj7" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Gumaca Branch</td>
+                <td>120 Luna Street</td>
+                <td>Rizal</td>
+                <td>Gumaca</td>
+                <td>Quezon</td>
+                <td>4307</td>
+                <td>
+                    <strong>0905 426 9440</strong><br>
+                    <a href="https://facebook.com/thelittlenestgumaca" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://share.google/lHTY6ajR0s3P6p5lH" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Lopez Branch</td>
+                <td>Vendors Cooperative Bldg, Poblacion</td>
+                <td>Lopez</td>
+                <td>Lopez</td>
+                <td>Quezon</td>
+                <td>4316</td>
+                <td>
+                    <strong>0998 577 5475</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=615742423861424" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://share.google/o8XbVYQ2sICsx0Kmw" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Lucban Branch</td>
+                <td>Gate 1, Miramonte Subdivision, Millenium Plaza Building</td>
+                <td>Tinamnan</td>
+                <td>Lucban</td>
+                <td>Quezon</td>
+                <td>4328</td>
+                <td>
+                    <strong>0945 291 9906</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61576672797126" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://share.google/SrtfdPUAUQdFjvNcc" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Lucena Branch One</td>
+                <td>9P Gomez St.</td>
+                <td>3</td>
+                <td>Lucena</td>
+                <td>Quezon</td>
+                <td>4301</td>
+                <td>
+                    <strong>0976 333 2310</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61583009156879" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://share.google/Bly48t4vt5FKubHc9" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Lusacan Tiaong Branch</td>
+                <td>MCV Building, Maharlika Highway, Villa Nosa Subd.</td>
+                <td>Lusacan</td>
+                <td>Tiaong</td>
+                <td>Quezon</td>
+                <td>4325</td>
+                <td>
+                    <strong>0942 788 0247</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61588336485281" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://maps.app.goo.gl/Hoy9wxoJe2myWjR78" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Majayjay Branch</td>
+                <td>RD Building, 2nd Floor</td>
+                <td>Sta. Catalina</td>
+                <td>Majayjay</td>
+                <td>Laguna</td>
+                <td>4005</td>
+                <td>
+                    <strong>0956 044 8758</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61581147763844" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://share.google/iozZxaCs3JEsa6uFk" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Munoz Branch</td>
+                <td>Purok Villa Isidra</td>
+                <td>Bantug</td>
+                <td>Science City of Munoz</td>
+                <td>Nueva Ecija</td>
+                <td>3119</td>
+                <td>
+                    <strong>0995 586 2140</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61588927955721" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://share.google/uYNw0wighvkSu5Igy" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Pagbilao Branch</td>
+                <td>The Raftel Unit 19 2nd Floor, Sitio Fori</td>
+                <td>Talipan</td>
+                <td>Pagbilao</td>
+                <td>Quezon</td>
+                <td>4302</td>
+                <td>
+                    <strong>0917 314 3096</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61586875343185" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://maps.app.goo.gl/72ANrReAYRhajt1B6" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Red-V Branch</td>
+                <td>2nd Floor, Unit 5, Aranilla Compound, Maharlika Highway</td>
+                <td>Ibabang Dupay</td>
+                <td>Lucena</td>
+                <td>Quezon</td>
+                <td>4301</td>
+                <td>
+                    <strong>0961 852 1387</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61587201597666" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://maps.app.goo.gl/8Vn1xFQ1M63HAhM38" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Sariaya Main Branch</td>
+                <td>Jesus Nazareno Bldg, Quezon Ave. Extension</td>
+                <td>Mamala 2</td>
+                <td>Sariaya</td>
+                <td>Quezon</td>
+                <td>4322</td>
+                <td>
+                    <strong>0945 291 9906</strong><br>
+                    <a href="https://www.facebook.com/thelittlenestplayschool" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://share.google/VLzZJh3h4h0cQz6ni" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Santo Tomas Branch</td>
+                <td>N.D.N. Building 2nd Floor</td>
+                <td>San Roque</td>
+                <td>Santo Tomas</td>
+                <td>Batangas</td>
+                <td>4232</td>
+                <td>
+                    <strong>0949 914 3626</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61591180232416" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://maps.app.goo.gl/CxzKZH11VsmJ1yJ1A" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Tayabas Branch</td>
+                <td>37 Quezon Avenue, San Diego Zone 2</td>
+                <td>San Diego Zone 2</td>
+                <td>Tayabas</td>
+                <td>Quezon</td>
+                <td>4327</td>
+                <td>
+                    <strong>0945 706 2421</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61575064837470" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://share.google/KwY1mXQDKX91aL7PU" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="branch-name">Tayug Branch</td>
+                <td>Rizal St.</td>
+                <td>Poblacion A</td>
+                <td>Tayug</td>
+                <td>Pangasinan</td>
+                <td>2445</td>
+                <td>
+                    <strong>0916 428 1578</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61589855182033" class="link-item" target="_blank">Facebook</a>
+                    <a href="https://maps.app.goo.gl/dAM8KiQv7eaUe7d47" class="link-item map-link" target="_blank">Google Map</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>&copy; 2026 The Little Nest Playschool. All rights reserved.</footer>
 </div>
-
 </body>
 </html>
