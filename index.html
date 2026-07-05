@@ -10,104 +10,122 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
+            background-color: #f1f5f9;
             color: #1e293b;
-            line-height: 1.6;
+            line-height: 1.5;
             margin: 0;
-            padding: 40px 20px;
+            padding: 50px 20px;
         }
         .container {
-            max-width: 1300px; /* Widened slightly to give the table more horizontal breathing room */
+            max-width: 1000px;
             margin: 0 auto;
             background: #ffffff;
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border-radius: 16px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
             border-top: 8px solid #0d9488;
         }
         h1 {
-            font-size: 28px;
+            font-size: 32px;
             font-weight: 700;
             color: #0f172a;
             margin-top: 0;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
+            letter-spacing: -0.02em;
         }
         .subtitle {
             font-size: 16px;
             color: #64748b;
-            margin-bottom: 32px;
+            margin-bottom: 36px;
             font-weight: 500;
         }
         .notice-box {
             background-color: #f0fdfa;
             border-left: 4px solid #0d9488;
             padding: 20px;
-            border-radius: 0 8px 8px 0;
+            border-radius: 8px;
             margin-bottom: 40px;
         }
         .notice-box p {
             margin: 0;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 500;
             color: #115e59;
         }
         h2 {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 600;
             color: #0f172a;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
             border-bottom: 2px solid #f1f5f9;
-            padding-bottom: 8px;
-        }
-        .table-container {
-            overflow-x: auto;
+            padding-bottom: 10px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             text-align: left;
-            font-size: 13px;
+            font-size: 14px;
         }
         th {
             background-color: #f8fafc;
             color: #475569;
             font-weight: 600;
-            padding: 12px 14px;
+            padding: 14px 20px;
             border-bottom: 2px solid #e2e8f0;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.05em;
         }
         td {
-            padding: 14px;
+            padding: 18px 20px;
             border-bottom: 1px solid #e2e8f0;
             color: #334155;
             vertical-align: top;
+        }
+        tr:hover td {
+            background-color: #fafafa;
         }
         tr:last-child td {
             border-bottom: none;
         }
         .branch-name {
+            font-weight: 700;
+            color: #0f172a;
+            font-size: 15px;
+        }
+        .address-block {
+            line-height: 1.6;
+            color: #475569;
+        }
+        .contact-block {
+            line-height: 1.6;
+        }
+        .phone-num {
             font-weight: 600;
             color: #0f172a;
-        }
-        .contact-col {
-            white-space: nowrap; /* Prevents the phone numbers from breaking onto a second line */
+            display: block;
         }
         .fb-link {
-            display: block; /* Pushes the link to the second line under the number */
-            font-size: 11px;
+            display: inline-flex;
+            align-items: center;
+            font-size: 13px;
             color: #1877f2;
             text-decoration: none;
-            margin-top: 4px;
+            margin-top: 6px;
             font-weight: 500;
         }
         .fb-link:hover {
             text-decoration: underline;
         }
-        .placeholder-text {
+        .fill-blank {
             color: #94a3b8;
-            font-style: italic;
+            border-bottom: 1px dashed #cbd5e1;
+            padding-bottom: 1px;
+            display: inline-block;
+            min-width: 90px;
         }
         footer {
-            margin-top: 40px;
+            margin-top: 50px;
             text-align: center;
             font-size: 13px;
             color: #94a3b8;
@@ -129,204 +147,242 @@
         <table>
             <thead>
                 <tr>
-                    <th>Branch Name</th>
-                    <th>Street Address / Building</th>
-                    <th>Barangay</th>
-                    <th>City / Municipality</th>
-                    <th>Province</th>
-                    <th>Postal Code</th>
-                    <th>Contact Support</th>
+                    <th style="width: 30%;">Branch / Campus</th>
+                    <th style="width: 45%;">Full Postal Address</th>
+                    <th style="width: 25%;">Contact Channels</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td class="branch-name">Atimonan Branch</td>
-                    <td><span class="placeholder-text">[Fill Street]</span></td>
-                    <td><span class="placeholder-text">[Fill Brgy]</span></td>
-                    <td>Atimonan</td>
-                    <td>Quezon Province</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col">0945 291 9906<a href="https://facebook.com/thelittlenestplayschoolatimonan" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        <span class="fill-blank">Street / Building</span>, <span class="fill-blank">Barangay</span><br>
+                        Atimonan, Quezon Province, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="phone-num">0945 291 9906</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolatimonan" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Batangas City Branch</td>
-                    <td><span class="placeholder-text">[Fill Street]</span></td>
-                    <td><span class="placeholder-text">[Fill Brgy]</span></td>
-                    <td>Batangas City</td>
-                    <td>Calabarzon, Batangas</td>
-                    <td>4200</td>
-                    <td class="contact-col">0919 702 2178<a href="https://facebook.com/thelittlenestplayschoolbatangascity" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        <span class="fill-blank">Street / Building</span>, <span class="fill-blank">Barangay</span><br>
+                        Batangas City, Calabarzon, Batangas, 4200
+                    </td>
+                    <td class="contact-block">
+                        <span class="phone-num">0919 702 2178</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolbatangascity" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Calbayog Branch</td>
-                    <td><span class="placeholder-text">[Fill Street]</span></td>
-                    <td><span class="placeholder-text">[Fill Brgy]</span></td>
-                    <td>Calbayog</td>
-                    <td>Samar</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col">0964 860 0698<a href="https://facebook.com/thelittlenestplayschoolcalbayog" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        <span class="fill-blank">Street / Building</span>, <span class="fill-blank">Barangay</span><br>
+                        Calbayog, Samar, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="phone-num">0964 860 0698</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolcalbayog" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Candelaria Branch</td>
-                    <td><span class="placeholder-text">[Fill Street]</span></td>
-                    <td><span class="placeholder-text">[Fill Brgy]</span></td>
-                    <td>Candelaria</td>
-                    <td>Quezon Province</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col">0994 592 0462<a href="https://facebook.com/thelittlenestplayschoolcandelaria" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        <span class="fill-blank">Street / Building</span>, <span class="fill-blank">Barangay</span><br>
+                        Candelaria, Quezon Province, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="phone-num">0994 592 0462</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolcandelaria" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Catanauan Branch</td>
-                    <td>Gee and jinrich building</td>
-                    <td><span class="placeholder-text">[Fill Brgy]</span></td>
-                    <td>Catanauan</td>
-                    <td>Quezon Province</td>
-                    <td>4311</td>
-                    <td class="contact-col">0967 275 2378<a href="https://facebook.com/thelittlenestplayschoolcatanauan" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        Gee and jinrich building, <span class="fill-blank">Barangay</span><br>
+                        Catanauan, Quezon Province, 4311
+                    </td>
+                    <td class="contact-block">
+                        <span class="phone-num">0967 275 2378</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolcatanauan" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Gulang-Gulang Lucena Branch</td>
-                    <td><span class="placeholder-text">[Fill Street]</span></td>
-                    <td>Gulang-Gulang</td>
-                    <td>Lucena</td>
-                    <td>Quezon Province</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col">0936 947 5921<a href="https://facebook.com/thelittlenestplayschoolgulanggulang" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        <span class="fill-blank">Street / Building</span>, Gulang-Gulang<br>
+                        Lucena, Quezon Province, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="phone-num">0936 947 5921</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolgulanggulang" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Gumaca Branch</td>
-                    <td>120 Luna Street</td>
-                    <td>Brgy. Rizal</td>
-                    <td>Gumaca</td>
-                    <td>Quezon Province</td>
-                    <td>4307</td>
-                    <td class="contact-col">0905 426 9440<a href="https://facebook.com/thelittlenestplayschoolgumaca" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        120 Luna Street, Brgy. Rizal<br>
+                        Gumaca, Quezon Province, 4307
+                    </td>
+                    <td class="contact-block">
+                        <span class="phone-num">0905 426 9440</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolgumaca" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Lopez / Calauag Branch</td>
-                    <td>Vendors Cooperative Bldg</td>
-                    <td><span class="placeholder-text">[Fill Brgy]</span></td>
-                    <td>Lopez</td>
-                    <td>Quezon Province</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col">0998 577 5475<a href="https://facebook.com/thelittlenestplayschoollopez" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        Vendors Cooperative Bldg, <span class="fill-blank">Barangay</span><br>
+                        Lopez, Quezon Province, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="phone-num">0998 577 5475</span>
+                        <a href="https://facebook.com/thelittlenestplayschoollopez" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Lucban Branch</td>
-                    <td>Gate 1, Miramonte Subdivision, Millenium Plaza Building</td>
-                    <td>Brgy. Tinamnan</td>
-                    <td>Lucban</td>
-                    <td>Quezon Province</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col">0945 291 9906<a href="https://facebook.com/thelittlenestplayschoollucban" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        Gate 1, Miramonte Subdivision, Millenium Plaza Building, Brgy. Tinamnan<br>
+                        Lucban, Quezon Province, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="phone-num">0945 291 9906</span>
+                        <a href="https://facebook.com/thelittlenestplayschoollucban" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Lucena Branch One</td>
-                    <td>9P Gomez Street</td>
-                    <td>Brgy. 3</td>
-                    <td>Lucena</td>
-                    <td>Quezon Province</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col">0976 333 2310<a href="https://facebook.com/thelittlenestplayschoollucenabranchedone" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        9P Gomez Street, Brgy. 3<br>
+                        Lucena, Quezon Province, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="phone-num">0976 333 2310</span>
+                        <a href="https://facebook.com/thelittlenestplayschoollucenabranchedone" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Lusacan Tiaong Branch</td>
-                    <td>MCV Building, Maharlika Highway</td>
-                    <td>Lusacan</td>
-                    <td>Tiaong</td>
-                    <td>Quezon Province</td>
-                    <td>4325</td>
-                    <td class="contact-col"><span class="placeholder-text">[Fill Phone]</span><a href="https://facebook.com/thelittlenestplayschoollusacantiaong" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        MCV Building, Maharlika Highway, Lusacan<br>
+                        Tiaong, Quezon Province, 4325
+                    </td>
+                    <td class="contact-block">
+                        <span class="fill-blank">Phone Number</span>
+                        <a href="https://facebook.com/thelittlenestplayschoollusacantiaong" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Mabini Branch</td>
-                    <td>Mabini Public Market, 340 Col. Dominador Braganza Street</td>
-                    <td><span class="placeholder-text">[Fill Brgy]</span></td>
-                    <td>Mabini</td>
-                    <td>Pangasinan</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col">0993 703 9631<a href="https://facebook.com/thelittlenestplayschoolmabini" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        Mabini Public Market, 340 Col. Dominador Braganza Street, <span class="fill-blank">Barangay</span><br>
+                        Mabini, Pangasinan, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="phone-num">0993 703 9631</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolmabini" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Majayjay Branch</td>
-                    <td><span class="placeholder-text">[Fill Street]</span></td>
-                    <td><span class="placeholder-text">[Fill Brgy]</span></td>
-                    <td>Majayjay</td>
-                    <td>Laguna</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col"><span class="placeholder-text">[Fill Phone]</span><a href="https://facebook.com/thelittlenestplayschoolmajayjay" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        <span class="fill-blank">Street / Building</span>, <span class="fill-blank">Barangay</span><br>
+                        Majayjay, Laguna, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="fill-blank">Phone Number</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolmajayjay" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Mulanay Branch</td>
-                    <td><span class="placeholder-text">[Fill Street]</span></td>
-                    <td><span class="placeholder-text">[Fill Brgy]</span></td>
-                    <td>Mulanay</td>
-                    <td>Quezon Province</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col">0919 702 2178<a href="https://facebook.com/thelittlenestplayschoolmulanay" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        <span class="fill-blank">Street / Building</span>, <span class="fill-blank">Barangay</span><br>
+                        Mulanay, Quezon Province, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="phone-num">0919 702 2178</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolmulanay" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Munoz Branch</td>
-                    <td><span class="placeholder-text">[Fill Street]</span></td>
-                    <td><span class="placeholder-text">[Fill Brgy]</span></td>
-                    <td>Science City of Munoz</td>
-                    <td>Nueva Ecija</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col">0995 586 2140<a href="https://facebook.com/thelittlenestplayschoolmunoz" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        <span class="fill-blank">Street / Building</span>, <span class="fill-blank">Barangay</span><br>
+                        Science City of Munoz, Nueva Ecija, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="phone-num">0995 586 2140</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolmunoz" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Pagbilao Branch</td>
-                    <td>Raftel Building</td>
-                    <td><span class="placeholder-text">[Fill Brgy]</span></td>
-                    <td>Pagbilao</td>
-                    <td>Quezon Province</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col"><span class="placeholder-text">[Fill Phone]</span><a href="https://facebook.com/thelittlenestplayschoolpagbilao" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        Raftel Building, <span class="fill-blank">Barangay</span><br>
+                        Pagbilao, Quezon Province, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="fill-blank">Phone Number</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolpagbilao" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Red-V Branch</td>
-                    <td>2nd Floor, Unit 5, Aranilla Compound, Maharlika Highway</td>
-                    <td>Brgy. Ibabang Dupay, Red-V</td>
-                    <td>Lucena</td>
-                    <td>Quezon Province</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col"><span class="placeholder-text">[Fill Phone]</span><a href="https://facebook.com/thelittlenestplayschoolredv" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        2nd Floor, Unit 5, Aranilla Compound, Maharlika Highway, Brgy. Ibabang Dupay, Red-V<br>
+                        Lucena, Quezon Province, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="fill-blank">Phone Number</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolredv" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">San Pablo Branch</td>
-                    <td><span class="placeholder-text">[Fill Street]</span></td>
-                    <td><span class="placeholder-text">[Fill Brgy]</span></td>
-                    <td>San Pablo</td>
-                    <td>Laguna</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col"><span class="placeholder-text">[Fill Phone]</span><a href="https://facebook.com/thelittlenestplayschoolsanpablo" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        <span class="fill-blank">Street / Building</span>, <span class="fill-blank">Barangay</span><br>
+                        San Pablo, Laguna, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="fill-blank">Phone Number</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolsanpablo" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Sariaya Branch</td>
-                    <td>Quezon Avenue</td>
-                    <td><span class="placeholder-text">[Fill Brgy]</span></td>
-                    <td>Sariaya</td>
-                    <td>Quezon Province</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col">0945 291 9906<a href="https://facebook.com/thelittlenestplayschoolsariaya" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        Quezon Avenue, <span class="fill-blank">Barangay</span><br>
+                        Sariaya, Quezon Province, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="phone-num">0945 291 9906</span>
+                        <a href="https://facebook.com/thelittlenestplayschoolsariaya" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Tayabas Branch</td>
-                    <td>37 Quezon Avenue</td>
-                    <td>San Diego Zone 2</td>
-                    <td>Tayabas</td>
-                    <td>Quezon Province</td>
-                    <td>4327</td>
-                    <td class="contact-col">0945 291 9906<a href="https://facebook.com/thelittlenestplayschooltayabas" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        37 Quezon Avenue, San Diego Zone 2<br>
+                        Tayabas, Quezon Province, 4327
+                    </td>
+                    <td class="contact-block">
+                        <span class="phone-num">0945 291 9906</span>
+                        <a href="https://facebook.com/thelittlenestplayschooltayabas" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="branch-name">Tayug Branch</td>
-                    <td><span class="placeholder-text">[Fill Street]</span></td>
-                    <td><span class="placeholder-text">[Fill Brgy]</span></td>
-                    <td>Tayug</td>
-                    <td>Pangasinan</td>
-                    <td><span class="placeholder-text">[Fill Zip]</span></td>
-                    <td class="contact-col"><span class="placeholder-text">[Fill Phone]</span><a href="https://facebook.com/thelittlenestplayschooltayug" class="fb-link" target="_blank">Facebook Page</a></td>
+                    <td class="address-block">
+                        <span class="fill-blank">Street / Building</span>, <span class="fill-blank">Barangay</span><br>
+                        Tayug, Pangasinan, <span class="fill-blank">Postal Code</span>
+                    </td>
+                    <td class="contact-block">
+                        <span class="fill-blank">Phone Number</span>
+                        <a href="https://facebook.com/thelittlenestplayschooltayug" class="fb-link" target="_blank">Official Facebook Page</a>
+                    </td>
                 </tr>
             </tbody>
         </table>
