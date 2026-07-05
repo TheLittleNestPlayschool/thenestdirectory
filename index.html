@@ -17,7 +17,7 @@
             padding: 40px 20px;
         }
         .container {
-            max-width: 1000px;
+            max-width: 1100px; /* Slightly widened to help everything fit on one line */
             margin: 0 auto;
             background: #ffffff;
             padding: 40px;
@@ -60,7 +60,7 @@
             padding-bottom: 8px;
         }
         .table-container {
-            overflow-x: auto;
+            overflow-x: auto; /* Keeps it clean on mobile if screen is too narrow */
         }
         table {
             width: 100%;
@@ -74,12 +74,14 @@
             font-weight: 600;
             padding: 12px 16px;
             border-bottom: 2px solid #e2e8f0;
+            white-space: nowrap;
         }
         td {
             padding: 16px;
             border-bottom: 1px solid #e2e8f0;
             color: #334155;
-            vertical-align: top;
+            vertical-align: middle;
+            white-space: nowrap; /* CRITICAL: Forces the text to stay on a single line */
         }
         tr:last-child td {
             border-bottom: none;
